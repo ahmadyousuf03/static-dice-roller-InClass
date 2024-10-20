@@ -16,7 +16,7 @@
 
         rollButton.addEventListener('click', async () => {
             try {
-                const response = await fetch('https://your-api-url.azurewebsites.net/api/roll');
+                const response = await fetch('https://node-dice-roller-inclass-ay.azurewebsites.net//api/roll');
                 const data = await response.json();
                 resultDiv.innerText = `You rolled a ${data.roll}`;
             } catch (error) {
